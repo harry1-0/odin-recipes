@@ -1,0 +1,98 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: Tahoma,serif;
+}
+
+.container{
+ padding: 20px;
+ 
+
+}
+.title{
+    text-align: center;
+    margin: 20px;
+    font-size: 42PX;
+    font-weight: bolder;
+}
+.recipe-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.recipe-list li{
+    background-color: bisque;
+    padding: 15px;
+    border: 2px solid rgb(3, 58, 40);
+    border-radius: 5px;
+    
+}
+.recipe-list li a{
+    background-color: bisque;
+    color: rgb(3, 58, 40);
+    text-decoration: none;
+    box-shadow: 10px 5px 10px;
+    border-radius: 5px; 
+    padding: 2px 3px;
+}
+.recipe-list a:hover{
+    margin: 1px;
+    font-size: 1.1rem;
+}
+.recipe-list li{
+    display: flex;
+    flex-direction: column;
+}
+.recipe-list img{
+    display: none;
+}
+.recipe-list li:hover img{
+  display: block;
+}
+
+.image-description,.ingredients,.steps{
+    display: flex;
+    padding: 10px;
+    margin: 15px 10px;
+    gap: 20px;
+    border-bottom: 5px solid rgba(3, 58, 40, 0.719);
+    font-style: oblique;
+}
+
+.figure{
+    border: 4px solid rgb(3, 58, 40);
+    border-radius: 5px;
+    
+}
+.figure img{
+    width: 350px;
+}
+.figure figcaption{
+    padding: 1px 3px;
+    font-style: oblique;
+    text-wrap: wrap;
+}
+.des-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.ingredients ul{
+  list-style: none;
+  margin-left: 150px;
+}
+.steps ol{
+    margin-left: 205px;
+    
+}
+.return-home{
+    text-align: right;
+    padding: 10px;
+    margin: 0 10px;
+}
+ol li, ul li{
+    margin-bottom:2px ;
+}
